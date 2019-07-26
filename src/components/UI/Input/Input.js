@@ -44,9 +44,7 @@ const input = (props) => {
   }
 
   let validationError = null  
-  console.log(`Valid: ${props.invalid}`)
-  console.log(`Touched: ${props.touched}`)
-  console.log(validationError)
+  
   return(
     <div className={classes.Input}>
       <label className={classes.Label}>{props.label}</label>
