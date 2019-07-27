@@ -11,7 +11,7 @@ import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler'
 import * as actions from '../../store/actions/index'
 import axios from '../../axios-orders'
 
-class BurgerBuilder extends Component {
+export class burgerBuilder extends Component {
   state = {
     purchasing: false
   }
@@ -111,5 +111,5 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(withErrorHandler(BurgerBuilder, axios))
+export default connect(mapStateToProps, mapDispatchToProps)(withErrorHandler(burgerBuilder, axios))
  
